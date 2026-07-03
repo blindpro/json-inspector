@@ -7,3 +7,5 @@
 pack_creator.nvgt
 Makefile
 *__pycache__/
+*.json
+tester.py
