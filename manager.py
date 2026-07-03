@@ -1,4 +1,9 @@
 import json
-def load(filename):
-    with open(filename,"r") as f:
-        return json.load(f)
+class manager:
+    def __init__(self,filename):
+        self.filename = filename
+        self.load()
+    def load(self):
+        with open(self.filename,"r") as f:
+            self.data = json.load(f)
+    
