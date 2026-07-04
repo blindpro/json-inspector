@@ -1,3 +1,4 @@
+import sys
 from manager import manager
 m = manager()
 def load(filename):
@@ -5,6 +6,9 @@ def load(filename):
 def help():
     print("commands")
     print("help. displays this message")
+def quit():
+        print("quitting...")
+        sys.exit()
 def read():
     key = input("Please enter the key you would like to read.")
     print(m.read(key))

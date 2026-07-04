@@ -1,5 +1,5 @@
 import actions
-commands = {"help":actions.help,"read":actions.read}
+commands = {"help":actions.help,"read":actions.read,"quit":actions.quit}
 def parse(command):
     if(command in commands):
         func = commands[command]
