@@ -11,8 +11,7 @@ except JSONDecodeError:
    print("file is not a valid json file.")
    parser.parse("quit")
 print("json loaded")
-running = True
-while(running):
+while(True):
     print("Please enter a command. Type help for a list of commands.")
     command = input()
     parser.parse(command)
