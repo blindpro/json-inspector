@@ -4,8 +4,16 @@ class manager:
         self.filename = "none"
     def load(self,filename):
         self.filename = filename
-        with open(self.filename,"r") as f:
-            self.data = json.load(f)
+        try:
+            with open(self.filename,"r") as f:
+                self.data = json.load(f)
+        except FileNotFoundError:
+            print("file not found.")
+            return False
+        except json.JSONDecodeError:
+            print("file is not a valid json file.")
+            return False
+        return True
     def read(self,key):
         if(key not in self.data):
             return "key not found"
