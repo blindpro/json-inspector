@@ -13,4 +13,8 @@ def quit():
 def read():
     key = input("Please enter the key you would like to read.")
     print(m.read(key))
-    
+def write():
+    key = input("Please enter  the key you would like to write.")
+    value = input("Please enter the value you want this key to have.")
+    m.write(key,value)
+    print("key "+key+" written with value "+value)
