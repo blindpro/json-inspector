@@ -7,6 +7,7 @@ def help():
     print("commands")
     print("help. displays this message")
     print("read. Reads a key from the .json file.")
+    print("Write. Writes a key to the .json file.")
 def quit():
         print("quitting...")
         sys.exit()
